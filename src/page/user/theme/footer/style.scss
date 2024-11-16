@@ -1,0 +1,63 @@
+.footer {
+    background-color: #1a2c3d;
+    padding: 70px 0;
+    color: #ffffff;
+  }
+  
+  
+  .col {
+    flex: 1;
+    margin: 0 15px;
+    max-width: 25%;
+  }
+  
+  .footer_about_logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .col h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .col ul li {
+    margin-bottom: 20px;
+  }
+  
+  .col form {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .col input[type="email"] {
+    padding: 8px;
+    flex: 1;
+  }
+  
+  .col button {
+    padding: 8px 16px;
+    background-color: #289cd1;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  

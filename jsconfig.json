@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES6",
+        "baseUrl": "src",
+        "types": [
+            "node",
+            "react",
+            "react-dom",
+            "jest"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

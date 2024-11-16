@@ -1,0 +1,86 @@
+@use "sass:map"; // Nếu sử dụng Sass modules
+@import "responsive";
+@import "theme";
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 100px;
+
+}
+
+.header_center {
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_search{
+    .search-bar {
+        position: relative;
+        width: 700px;
+    }
+     /* Định dạng ô input */
+     .search-bar input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Đổi màu khung input khi focus */
+    .search-bar input[type="text"]:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    }
+    
+    /* Định dạng nút tìm kiếm */
+    .search-bar button {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: #007bff;
+    }
+}
+
+.header_cart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cart{
+    background: #ec4f15f6; 
+    height: 20px; 
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    line-height: 20px;
+}

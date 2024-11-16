@@ -1,0 +1,114 @@
+.header_top {
+    background:#00ABE4 ;
+    height: 50px;
+}
+
+.header_Top_Right {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Roboto", sans-serif;
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        :hover {
+            background: #f1894df6;
+            transition: all 0.2s ease-in-out; 
+            border-radius: 10px;
+        }
+    }  
+
+    li {
+        padding: 0 10px;
+        line-height: 50px;
+        border-right: 20px ;
+       
+    } 
+
+    span {
+        color: #fff;
+        display: inline-block;
+        
+    }
+}
+
+.header_Top_Left {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    h3 {
+        margin: 0;
+        line-height: 50px;
+        color: #fff;
+    }
+}
+
+/* Đặt kiểu cho menu chính */
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ec4f15f6;
+}
+
+.menu ul li {
+    position: relative; /* Để submenu có thể hiển thị bên dưới */
+    margin-right: 40px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu ul li a:hover {
+    background-color: #ffb07c  ;
+}
+
+/* Submenu */
+.menu ul li .submenu {
+    display: none; /* Ẩn submenu mặc định */
+    position: absolute;
+    top: 100%; /* Đặt submenu ngay dưới mục cha */
+    left: 0;
+    background-color:  #ffb07c ;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    min-width: 200px; /* Đặt chiều rộng tối thiểu cho submenu */
+    z-index: 1000;
+}
+
+.menu ul li:hover .submenu {
+    display: block; /* Hiện submenu khi rê chuột vào mục cha */
+    transition: all 0.5s ease;
+
+}
+
+.menu ul li .submenu li {
+    width: 100%;
+}
+
+.menu ul li .submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color:   #ffb07c ;
+    transition: background-color 0.5s ease;
+}
+
+.menu ul li .submenu li a:hover {
+    background-color: #00ABE4; /* Màu nền khi rê chuột vào mục submenu */
+}
+
