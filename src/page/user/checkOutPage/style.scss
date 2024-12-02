@@ -1,0 +1,57 @@
+
+
+.checkout_input{
+   
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+
+    input,textarea{
+        margin-top:10px 0;
+        width: 400px;
+        height: 40px;
+    }
+    .required{
+        color: red;
+    }
+}
+
+.checkout_oder{
+    width: 500px;
+    height: 200px auto;
+    background:#fff;
+    padding: 40px;
+    padding-top: 30px;
+    margin-left:    30px;
+    h3{
+        border-bottom: 1px solid #fff;
+        padding-bottom: 1px;
+    }
+
+    ul{
+        li{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            line-height: 50px;
+        }
+        .checkout_oder_subtotal{
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 20px;
+            b{
+                color: skyblue;
+            }
+        }
+    }
+    button{
+        height:40px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:skyblue;
+        color: white;
+        border: none;
+    }
+}

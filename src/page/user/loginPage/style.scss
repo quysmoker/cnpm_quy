@@ -1,0 +1,134 @@
+/* Tổng thể */
+.login-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+/* Phần bên trái */
+.login-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #023047;
+}
+
+.login-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #219ebc;
+}
+
+.login-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #3a506b;
+}
+
+.fishing-image {
+    max-width: 80%;
+    border-radius: 10px;
+    
+}
+
+/* Phần bên phải */
+.login-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #eef2f3, #8ecae6);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-heading {
+    font-size: 2rem;
+    color: #023047;
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background-color: #219ebc;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #176a83;
+}
+
+.signup-btn {
+    background-color: #8ecae6;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #3a86ff;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #219ebc;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #dcdcdc;
+}
+
+.create-page {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.create-page a {
+    color: #219ebc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
+

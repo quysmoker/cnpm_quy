@@ -1,38 +1,33 @@
 import { memo } from 'react';
 import './style.scss';
 import { Link } from 'react-router-dom';
+import logoImg from "assets/user/image/categories/logo.png";
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { router } from 'utils/router';
+
+
+
+const categories = [
+    "Trang chủ",
+    "Giới thiệu",
+    "Sản phẩm",
+    "Tin tức",
+    "Liên hệ",
+]
+
 
 const Header = () => {
     return (
         <>
-            <div className="header_top">
-                <div className="container">
-                    <div className="row">
-                        <div className=" header_Top_Left">
-                            <h3>CÂU CÁ LÀ MỘT NGHỆ THUẬT - NGƯỜI CÂU CÁ LÀ MỘT NGHỆ SĨ</h3>
-                        </div>
-                        <div className="header_Top_Right">
-                            <ul>
-                                <li>
-                                    <Link to="/login">
-                                        <span>Đăng nhập</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/register">
-                                        <span>Đăng kí</span>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div >
-            <div className='header_center'>
+
+            <div className='container'>
                 <div className='row' style={{ height: '90px' }}>
-                    <div className='header_logo'>
+                    <div className='header_logo' style={{ display: 'flex', alignItems: 'center' }}  >
                         <div className='logo'>
-                            <h1>Quý Thích Câu</h1>
+                            <Link to={router.USER.HOME_PAGE}>
+                                <img src={logoImg} style={{ width: '150px', height: '90px' }} alt="logo" />
+
+                            </Link>
                         </div>
                     </div>
                     <div className='header_search'>
@@ -42,51 +37,26 @@ const Header = () => {
                         </div>
                     </div>
                     <div className='header_cart'>
-                        <a href="#" style={{ textDecoration: 'none', color: 'black' }}> GIỎ HÀNG🛒</a>
-                        <span className='cart'>5</span>
+                        <Link to={router.USER.SHOPPING_CART} style={{ textDecoration: 'none', color: 'black' }}>
+                            GIỎ HÀNG
+                            <AiOutlineShoppingCart style={{ fontSize: '20px' }} />
+                            <span className='cart' >5</span>
+                        </Link>
+                        <div class="auth-buttons">
+                            <Link to={router.USER.LOGIN}> <button id="loginButton" class="auth-button">Đăng Nhập</button></Link>
+                            <Link to={router.USER.REGISTER}> <button id="RegisterButton" class="auth-button">Đăng Kí</button></Link>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div className='menu'>
                 <ul>
-                    <li>
-                        <a href="#home">Trang Chủ</a>
-                    </li>
-                    <li>
-                        <a href="#can-cau">Cần Câu</a>
-                        <ul class="submenu">
-                            <li><a href="#cau-tay">Câu Tay</a></li>
-                            <li><a href="#cau-lure">Câu Lure</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#day-cau">Dây Câu</a>
-                        <ul class="submenu">
-                            <li><a href="#cau-tay">Dây Cước</a></li>
-                            <li><a href="#cau-lure">Dây PE</a></li>
-                            <li><a href="#cau-tay">Dây Leader</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#phao">Phao</a>
-                        <ul class="submenu">
-                            <li><a href="#cau-tay">Phao Đài </a></li>
-                            <li><a href="#cau-lure">Phao Lure</a></li>
-                            <li><a href="#cau-tay">Phao Cỏ</a></li>
-                            <li><a href="#cau-lure">Phao Hố Đấu</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#luoi-cau">Lưỡi Câu</a>
-                        <ul class="submenu">
-                            <li><a href="#cau-tay">Lưỡi Đâu Đài</a></li>
-                            <li><a href="#cau-lure">Lưỡi Đâu Lancer</a></li>
-                            <li><a href="#cau-tay">Lưỡi câu máy</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#phu-kien">Phụ Kiện Câu Đài</a>
-                    </li>
+                    {categories.map((category, key) => (
+                        <li key={key}>
+                            <Link to={router.USER.PRODUCTS}> {category}</Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </>
@@ -95,3 +65,4 @@ const Header = () => {
 
 
 export default memo(Header);
+

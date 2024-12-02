@@ -1,0 +1,92 @@
+/* Tổng thể */
+.container_register {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #d0f0c0, #a3d8f4);
+}
+
+/* Phần bên trái */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #023047;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #219ebc;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #3a506b;
+}
+
+.image {
+    max-width: 80%;
+    border-radius: 10px;
+   
+}
+
+/* Phần bên phải */
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #023047;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn {
+    background-color: #219ebc;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #176a83;
+}
+
